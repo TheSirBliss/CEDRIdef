@@ -123,7 +123,13 @@
 
 /* Smooth scroll */
 html {
+  /* Abilita lo scrolling fluido nativo del browser */
   scroll-behavior: smooth;
+  
+  /* IMPORTANTISSIMO: dice al browser di fermare lo scroll un po' prima
+     del titolo della sezione, per non farlo nascondere sotto l'header fisso.
+     Regola 75px per farlo corrispondere all'altezza del tuo menu. */
+  scroll-padding-top: 75px; 
 }
 
 /* Utilità personalizzate */
